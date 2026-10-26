@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08070a" />
+    <title>ATELIER NOCTURNE — Objects of Slow Light</title>
+    <meta name="description" content="A material house for objects of slow light. Carved marble, brushed bronze and folded silk, staged in a single continuous camera move." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308070a'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23e0b483' stroke-width='1'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <canvas id="stage" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="cu-rim" aria-hidden="true"></div>
+    <div id="halo" class="halo" aria-hidden="true"></div>
+
+    <!-- curtain -->
+    <div class="curtain" aria-hidden="true">
+      <div class="curtain-inner">
+        <div class="curtain-mark">AN</div>
+        <div class="curtain-line"><span></span></div>
+        <div class="curtain-word">atelier nocturne</div>
+      </div>
+    </div>
+
+    <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+
+    <header id="nav" class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">AN</span>
+        <span class="brand-text">Atelier&nbsp;Nocturne</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#chapter-02">Collection</a>
+        <a href="#chapter-03">Materials</a>
+        <a href="#chapter-04">Studio</a>
+        <a href="#chapter-05">Visit</a>
+      </nav>
+      <a class="nav-cta" href="#chapter-05">Private view <span aria-hidden="true">→</span></a>
+    </header>
+
+    <aside class="rail" aria-label="Chapters">
+      <span id="rail-label" class="rail-label">Arrival</span>
+      <div class="rail-dots">
+        <a href="#chapter-01" aria-label="Chapter 1 — Arrival"></a>
+        <a href="#chapter-02" aria-label="Chapter 2 — Collection"></a>
+        <a href="#chapter-03" aria-label="Chapter 3 — Materials"></a>
+        <a href="#chapter-04" aria-label="Chapter 4 — Studio"></a>
+        <a href="#chapter-05" aria-label="Chapter 5 — Visit"></a>
+      </div>
+    </aside>
+
+    <main id="top">
+      <!-- 01 ARRIVAL -->
+      <section class="chapter hero" id="chapter-01" data-label="Arrival">
+        <div class="hero-inner">
+          <p class="eyebrow" data-reveal>
+            <span class="tick"></span> Maison de matière — Est. 2019
+          </p>
+          <h1 class="hero-title" data-split>Objects of slow light.</h1>
+          <p class="hero-lede" data-reveal>
+            Marble carved by hand. Bronze brushed to a whisper. Silk folded until it
+            remembers a shape. One continuous camera move through the room where they are made.
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a class="btn btn-solid" href="#chapter-02">Enter the room <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-ghost" href="#chapter-04">The studio</a>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <div class="scroll-cue" aria-hidden="true"><span></span>scroll</div>
+          <div class="hero-meta">
+            <span>44.8378° N</span><span>0.5792° W</span><span>Bordeaux</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 COLLECTION -->
+      <section class="chapter collection" id="chapter-02" data-label="Collection">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal><span class="tick"></span> Chapter 02 — The collection</p>
+          <h2 data-split data-reveal>Fifteen objects, three materials, no compromise.</h2>
+        </div>
+        <div class="cards">
+          <article class="card" data-reveal data-hover>
+            <div class="card-num">01</div>
+            <h3>The Monolith series</h3>
+            <p>Single-block Carrara, twisted and ridged while the quarry is still warm in the memory. Each piece settles 4&nbsp;kg lighter.</p>
+            <div class="card-tags"><span>Marble</span><span>Edition of 9</span></div>
+          </article>
+          <article class="card" data-reveal data-hover>
+            <div class="card-num">02</div>
+            <h3>Bronze, brushed aurora</h3>
+            <p>Sand-cast then brushed in one direction for 11 hours, so the grain catches a lamp the way a field catches wind.</p>
+            <div class="card-tags"><span>Bronze</span><span>Hand finish</span></div>
+          </article>
+          <article class="card" data-reveal data-hover>
+            <div class="card-num">03</div>
+            <h3>Folded silk tablescape</h3>
+            <p>A runner that holds the crease of the last meal. Dyed with madder root, dried on the studio's south wall.</p>
+            <div class="card-tags"><span>Silk</span><span>Natural dye</span></div>
+          </article>
+        </div>
+        <div class="collection-foot">
+          <div class="stat"><span data-count="412">0</span><small>pieces made</small></div>
+          <div class="stat"><span data-count="11">0</span><small>countries shipped</small></div>
+          <div class="stat"><span data-count="7">0</span><small>years of mistakes</small></div>
+        </div>
+      </section>
+
+      <!-- 03 MATERIALS -->
+      <section class="chapter materials" id="chapter-03" data-label="Materials">
+        <div class="materials-inner">
+          <div class="section-head left">
+            <p class="eyebrow" data-reveal><span class="tick"></span> Chapter 03 — Materials</p>
+            <h2 data-split data-reveal>Nothing here reflects a photograph. Everything reflects a room.</h2>
+          </div>
+          <div class="mat-list">
+            <div class="mat" data-reveal>
+              <div class="mat-head"><h3>Carrara</h3><span class="mat-idx">A</span></div>
+              <p>Veined by a river that ran 200 million years before the name. Clearcoated only where it meets the hand.</p>
+            </div>
+            <div class="mat" data-reveal>
+              <div class="mat-head"><h3>Bronze</h3><span class="mat-idx">B</span></div>
+              <p>Copper and tin, poured at 1&nbsp;100&nbsp;°C. Brushed, never polished — patina needs a place to sit.</p>
+            </div>
+            <div class="mat" data-reveal>
+              <div class="mat-head"><h3>Silk velvet</h3><span class="mat-idx">C</span></div>
+              <p>Woven with a sheen face so a single lamp travels the entire drape as you walk past it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 STUDIO -->
+      <section class="chapter studio" id="chapter-04" data-label="Studio">
+        <blockquote class="quote" data-reveal>
+          <p data-parallax="0.06">“A room is not lit. A room is <em>listened</em> to — you find where the light already wanted to fall and you move the object there.”</p>
+          <footer>
+            <span class="rule"></span>
+            <cite>Éloïse Marchand — founder, head of making</cite>
+          </footer>
+        </blockquote>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Carved in Bordeaux</span><span class="dot">◆</span>
+            <span>Lit by one lamp</span><span class="dot">◆</span>
+            <span>Shipped in ash crates</span><span class="dot">◆</span>
+            <span>Made for one room</span><span class="dot">◆</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 VISIT -->
+      <section class="chapter visit" id="chapter-05" data-label="Visit">
+        <div class="visit-inner">
+          <p class="eyebrow" data-reveal><span class="tick"></span> Chapter 05 — Visit</p>
+          <h2 class="visit-title" data-split data-reveal>Come stand in the light.</h2>
+          <p class="visit-lede" data-reveal>
+            The studio opens for twelve private views a year — six guests at a time,
+            after dark, by request. Bring nothing. Leave with a stone's weight of knowing.
+          </p>
+          <form class="visit-form" id="visit-form" data-reveal>
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Ada Lovelace" required />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@studio.com" required />
+            </label>
+            <button class="btn btn-solid" type="submit">Request a view <span aria-hidden="true">→</span></button>
+            <p class="form-note" role="status"></p>
+          </form>
+        </div>
+        <footer class="site-foot">
+          <div class="foot-brand">Atelier Nocturne</div>
+          <div class="foot-cols">
+            <div><span>12 Rue des Chartrons</span><span>33000 Bordeaux</span></div>
+            <div><a href="#top">Instagram</a><a href="#top">Journal</a></div>
+            <div><a href="mailto:studio@ateliernocturne.fr">studio@ateliernocturne.fr</a></div>
+          </div>
+          <div class="foot-base">
+            <span>© <span id="year">2025</span> Atelier Nocturne</span>
+            <span>Built in one room, in one move.</span>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
